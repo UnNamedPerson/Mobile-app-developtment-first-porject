@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WCD-yC-EFR">
+                                <rect key="frame" x="60" y="40" width="294" height="354"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qm1-JZ-RGQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game in progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RmU-Ks-jEO">
+                                                <rect key="frame" x="77.000000000000014" y="5.9999999999999982" width="132.33333333333337" height="20.333333333333329"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Xjo-2Z-N9y" appends="YES" id="SQt-1H-KZB"/>
+                                                </connections>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="RmU-Ks-jEO" firstAttribute="leading" secondItem="Qm1-JZ-RGQ" secondAttribute="leading" constant="77" id="X6Z-ZD-Llk"/>
+                                            <constraint firstItem="RmU-Ks-jEO" firstAttribute="top" secondItem="Qm1-JZ-RGQ" secondAttribute="top" constant="6" id="mmG-tn-bgz"/>
+                                            <constraint firstAttribute="height" constant="60" id="oTM-Hy-pFz"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RmU-Ks-jEO" secondAttribute="trailing" constant="20" symbolic="YES" id="xZ0-Df-TV2"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Xjo-2Z-N9y" appends="YES" id="Bqd-ra-gUZ"/>
+                                        </connections>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="AT0-Qe-3GZ">
+                                        <rect key="frame" x="0.0" y="60" width="294" height="294"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lco-Cq-r1D">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="294"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT3-vt-of4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="0bp-fl-LJn"/>
+                                                            <constraint firstAttribute="height" constant="90" id="zyx-1H-5Z9"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OO3-p0-xTK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ke-9M-VDy">
+                                                        <rect key="frame" x="0.0" y="102" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="Pgu-kC-NAU"/>
+                                                            <constraint firstAttribute="width" constant="90" id="mho-FK-itG"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ku-Is-rQ8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KV9-dX-Mfk">
+                                                        <rect key="frame" x="0.0" y="204" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="DH7-g5-rud"/>
+                                                            <constraint firstAttribute="width" constant="90" id="ITl-eY-sCR"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4nK-Ah-TZB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="E9p-yj-MKo"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="v8E-35-ZVx">
+                                                <rect key="frame" x="102" y="0.0" width="90" height="294"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPv-I4-FPs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="mdf-SC-P1Q"/>
+                                                            <constraint firstAttribute="width" constant="90" id="nLF-SW-7PW"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yua-6q-EED"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0s1-gV-FIi">
+                                                        <rect key="frame" x="0.0" y="102" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="0aC-uF-x6J"/>
+                                                            <constraint firstAttribute="width" constant="90" id="QAC-Hg-hkZ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fd9-lg-Zcm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8Z-yw-bP5">
+                                                        <rect key="frame" x="0.0" y="204" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="Bpz-pD-i0T"/>
+                                                            <constraint firstAttribute="width" constant="90" id="Nhz-s9-RIK"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1B-Yt-jhC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="zc9-ZI-hmw"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-U8-CjI">
+                                                <rect key="frame" x="204" y="0.0" width="90" height="294"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-PS-LyH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="90" id="S6F-KE-jFF"/>
+                                                            <constraint firstAttribute="width" constant="90" id="mel-gf-spb"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slB-e4-HuV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWW-tA-Fb6">
+                                                        <rect key="frame" x="0.0" y="102" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="X0H-IO-Nzg"/>
+                                                            <constraint firstAttribute="height" constant="90" id="wD6-b9-x8r"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qh3-lP-Out"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2F-Lo-Sqw">
+                                                        <rect key="frame" x="0.0" y="204" width="90" height="90"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="1hc-sY-XdH"/>
+                                                            <constraint firstAttribute="height" constant="90" id="agl-Mm-ra5"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="cellSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jF9-Uo-UBi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="pQq-gT-GUN"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="WCD-yC-EFR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Emq-br-6Jm"/>
+                            <constraint firstItem="WCD-yC-EFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="f1f-PJ-iY8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Xjo-2Z-N9y" appends="YES" id="tll-PX-9px"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="upperView" destination="Qm1-JZ-RGQ" id="059-9v-11e"/>
+                        <outlet property="winnerLabel" destination="RmU-Ks-jEO" id="00b-7X-3bD"/>
+                        <outletCollection property="TTTButtonCollection" destination="B8Z-yw-bP5" collectionClass="NSMutableArray" id="0kD-xw-3hR"/>
+                        <outletCollection property="TTTButtonCollection" destination="XWW-tA-Fb6" collectionClass="NSMutableArray" id="LkB-JY-hEO"/>
+                        <outletCollection property="TTTButtonCollection" destination="KV9-dX-Mfk" collectionClass="NSMutableArray" id="fcF-lJ-37r"/>
+                        <outletCollection property="TTTButtonCollection" destination="0s1-gV-FIi" collectionClass="NSMutableArray" id="tJp-ZV-abm"/>
+                        <outletCollection property="TTTButtonCollection" destination="G2F-Lo-Sqw" collectionClass="NSMutableArray" id="gtl-6Q-Klh"/>
+                        <outletCollection property="TTTButtonCollection" destination="dUE-PS-LyH" collectionClass="NSMutableArray" id="65e-yq-vuX"/>
+                        <outletCollection property="TTTButtonCollection" destination="8ke-9M-VDy" collectionClass="NSMutableArray" id="gXd-ma-dut"/>
+                        <outletCollection property="TTTButtonCollection" destination="CT3-vt-of4" collectionClass="NSMutableArray" id="daw-gA-d3L"/>
+                        <outletCollection property="TTTButtonCollection" destination="OPv-I4-FPs" collectionClass="NSMutableArray" id="zdJ-TU-XRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Xjo-2Z-N9y">
+                    <connections>
+                        <action selector="tapped1" destination="BYZ-38-t0r" id="Vmx-Uz-r08"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="131.25"/>
+        </scene>
+    </scenes>
+</document>
